@@ -1,0 +1,5 @@
+.main_layout_container{
+    width: 100vw;
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+}

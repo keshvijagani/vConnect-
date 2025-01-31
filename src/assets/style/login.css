@@ -1,0 +1,68 @@
+.errMsg {
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(6, 162, 214);
+    width: 300px;
+    margin: auto;
+    color: white;
+}
+
+form {
+    width: 330px;
+    text-align: center;
+}
+
+form input {
+    width: 95%;
+    padding: 5px;
+    border: 1px solid rgb(119, 119, 119);
+    font-size: 17px;
+    color: rgb(83, 83, 83);
+    margin-top: 21px;
+}
+
+form button {
+    width: 135px;
+    height: 33px;
+    background-color: rgb(2, 173, 122);
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin-top: 22px;
+}
+
+form .heading {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.account {
+    text-align: left;
+    margin-top: -10px;
+}
+
+.account p {
+    font-size: 16px;
+    color: red;
+    /* margin-top: 1px; */
+}
+
+
+.account a {
+    color: rgb(0, 0, 255);
+    cursor: pointer;
+}
+
+.main-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 53px;
+    margin-top: 29px;
+    flex-wrap: wrap;
+}
+.error-message{
+    margin-bottom: -9px;
+}

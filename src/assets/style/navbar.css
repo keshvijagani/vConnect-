@@ -1,0 +1,15 @@
+nav{
+    display: flex;
+    justify-content: left;
+    background-color: rgb(7, 7, 7);
+    padding: 11px;
+    
+  }
+  nav ul li a{
+    color: white;
+    margin-inline: 11px;
+    text-decoration: none;
+  }
+  .head{
+    font-size: 30px;
+  }
