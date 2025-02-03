@@ -5,6 +5,7 @@ import Login from "../pages/auth/Login";
 import Home from "../pages/Home";
 import Dashboard from "../pages/Dashboard";
 import TableData from "../components/TableData";
+import MeetingData from "../components/MeetingData";
 
 const MainRoutes = () => {
   return (
@@ -14,6 +15,8 @@ const MainRoutes = () => {
         <Route path="/" element={<Home />} >
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/tabledata" element={<TableData />} />
+          <Route path="/meetingdata" element={<MeetingData />} />
+
           </Route>
 
           </Routes>
