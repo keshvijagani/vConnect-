@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "../assets/style/MeetingData.css";
 import axios from 'axios';
-import moment from 'moment'; 
+import moment from 'moment';
 
 function MeetingData() {
     const [data, setData] = useState([]);
@@ -9,6 +9,7 @@ function MeetingData() {
     const [mdate, setMdate] = useState(''); 
     const [mstime, setMstime] = useState('');
     const [metime, setMetime] = useState('');
+    const [memail, setMemail] = useState('');  // New email state
     const [error, setError] = useState('');
 
     useEffect(() => {
@@ -30,7 +31,8 @@ function MeetingData() {
             name: mname,
             date: moment(mdate).format('YYYY-MM-DD'), 
             starttime: mstime,
-            endtime: metime
+            endtime: metime,
+            email: memail  // Include email in the new meeting object
         };
 
         axios.post('http://localhost:3000/data', newMeeting)
@@ -41,6 +43,7 @@ function MeetingData() {
                 setMdate('');
                 setMstime('');
                 setMetime('');
+                setMemail('');  // Reset the email field
             })
             .catch(err => {
                 setError('Failed to add meeting');
@@ -82,6 +85,13 @@ function MeetingData() {
                         required 
                         onChange={e => setMetime(e.target.value)} 
                     />
+                    <input 
+                        type='email'  // New input for email
+                        placeholder='Enter Your Email' 
+                        value={memail} 
+                        required 
+                        onChange={e => setMemail(e.target.value)} 
+                    />
                     <button type="submit">Add</button>
                 </form>
             </div>
@@ -93,6 +103,7 @@ function MeetingData() {
                         <th>Date</th>
                         <th>Start Time</th>
                         <th>End Time</th>
+                        <th>Email</th>  {/* New column for email */}
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -103,8 +114,10 @@ function MeetingData() {
                             <td>{moment(meeting.date).format('MMMM Do YYYY')}</td>  
                             <td>{meeting.starttime}</td>
                             <td>{meeting.endtime}</td>
+                            <td>{meeting.email}</td>  {/* Display email */}
                             <td>
-                                <button>Join</button>
+                                <button>Join</button>                                
+                                <button>Add</button>
                             </td>
                         </tr>
                     ))}
