@@ -1,7 +1,6 @@
 import React from "react";
 import {Line} from "react-chartjs-2";
 import {Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend } from "chart.js";
-import { Table } from "react-bootstrap";
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
@@ -27,6 +26,7 @@ const MeetingChart = ({meetingsData}) => {
         plugins: {
             legend: {
                 display: true,
+                position: "bottom"
             }
         },
         scales: {
@@ -38,18 +38,9 @@ const MeetingChart = ({meetingsData}) => {
 
     return(
     
-        <div className="card shadow-sm mt-4 p-4 mx-auto" style={{maxHeight:"600px"}}>
-          <h3 className="text-start text-primary mb-3 fs-6">Meetings & Employees</h3>
-            <div className="chart-container" >
-            <Line data={data} options={options} />
-            </div>
-            </div>
-
-
-   
-   
-
-    
+        <div className="chart-table-container mt-4 p-4" style={{width: "100%"}} >
+           <Line data={data} options={options} />
+        </div>
     )
 }
 

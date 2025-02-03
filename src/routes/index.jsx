@@ -4,16 +4,19 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "../pages/auth/Login";
 import Home from "../pages/Home";
 import Dashboard from "../pages/Dashboard";
+import TableData from "../components/TableData";
 
 const MainRoutes = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/login" element={<Login />} />
-        <Route path="/" element={<Home />}>
+        <Route path="/" element={<Home />} >
           <Route path="/dashboard" element={<Dashboard />} />
-        </Route>
-      </Routes>
+          <Route path="/tabledata" element={<TableData />} />
+          </Route>
+
+          </Routes>
     </BrowserRouter>
   );
 };

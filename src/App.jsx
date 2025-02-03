@@ -7,6 +7,8 @@ import MainRoutes from "./routes";
 import SignUp from "./pages/auth/signUp";
 import Login from "./pages/auth/Login";
 import "./App.css";
+
+
 const App = () => {
   return (
     <>
