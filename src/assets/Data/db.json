@@ -2,93 +2,27 @@
   "data": [
     {
       "id": "1",
-      "name": "Meet Patel",
-      "date": "10-12-2025",
-      "starttime": "12:47",
-      "endtime": "13:45",
-      "join": "join",
-      "email": "meet1@example.com"
+      "name": "meet",
+      "date": "2025-02-07",
+      "starttime": "15:08",
+      "endtime": "15:14",
+      "link": "https://meet.google.com/zsc-nnri-vot"
     },
     {
       "id": "2",
-      "name": "John Doe",
-      "date": "11-12-2025",
-      "starttime": "14:00",
-      "endtime": "15:00",
-      "join": "join",
-      "email": "john.doe@example.com"
+      "name": "sahil",
+      "date": "2025-02-07",
+      "starttime": "15:11",
+      "endtime": "15:19",
+      "link": "https://meet.google.com/hoe-jvqn-wbh"
     },
     {
       "id": "3",
-      "name": "Alice Smith",
-      "date": "12-12-2025",
-      "starttime": "08:30",
-      "endtime": "09:15",
-      "join": "join",
-      "email": "alice.smith@example.com"
-    },
-    {
-      "id": "4",
-      "name": "Bob Johnson",
-      "date": "1-12-2025",
-      "starttime": "16:00",
-      "endtime": "17:00",
-      "join": "join",
-      "email": "bob.johnson@example.com"
-    },
-    {
-      "id": "5",
-      "name": "Charlie Brown",
-      "date": "1-11-2025",
-      "starttime": "10:15",
-      "endtime": "11:30",
-      "join": "join",
-      "email": "charlie.brown@example.com"
-    },
-    {
-      "id": "6",
-      "name": "David White",
-      "date": "1-10-2025",
-      "starttime": "09:00",
-      "endtime": "10:00",
-      "join": "join",
-      "email": "david.white@example.com"
-    },
-    {
-      "id": "7",
-      "name": "Emma Wilson",
-      "date": "1-19-2025",
-      "starttime": "11:45",
-      "endtime": "12:30",
-      "join": "join",
-      "email": "emma.wilson@example.com"
-    },
-    {
-      "id": "8",
-      "name": "Frank Miller",
-      "date": "11-12-2025",
-      "starttime": "13:00",
-      "endtime": "14:00",
-      "join": "join",
-      "email": "frank.miller@example.com"
-    },
-    {
-      "id": "9",
-      "name": "Grace Davis",
-      "date": "10-12-2025",
-      "starttime": "15:30",
-      "endtime": "16:15",
-      "join": "join",
-      "email": "grace.davis@example.com"
-    },
-    {
-      "id": "10",
-      "name": "Hannah Moore",
-      "date": "9-12-2025",
-      "starttime": "17:00",
-      "endtime": "18:00",
-      "join": "join",
-      "email": "hannah.moore@example.com"
+      "name": "meet1",
+      "date": "2025-02-07",
+      "starttime": "15:39",
+      "endtime": "15:45",
+      "link": "https://meet.google.com/jws-cgsr-rrt"
     }
   ]
 }
